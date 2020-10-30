@@ -16,7 +16,6 @@ public class SpringBootDataJpaApplication implements CommandLineRunner {
 
         SpringApplication.run(SpringBootDataJpaApplication.class, args);
     }
-    ///Esto es para eliminar el directorio y recrearlo para empezar de 0
     @Override
     public void run(String... args) throws Exception {
         uploadFileService.deleteAll();

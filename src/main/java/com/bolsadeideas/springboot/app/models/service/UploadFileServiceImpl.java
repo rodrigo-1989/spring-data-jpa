@@ -35,8 +35,6 @@ public class UploadFileServiceImpl implements IUploadFileService {
     }
     @Override
     public String copy(MultipartFile file)throws IOException {
-        //Con esta ruta mando las imagenes subidas a mi disco y funciona bien
-        //String rootPath = "/Users/uploads";
         String uniqueFileName = UUID.randomUUID().toString()+"_"+file.getOriginalFilename();
         Path rootPath = getPath(uniqueFileName);
         log.info("rootPath: "+rootPath);
@@ -48,7 +46,6 @@ public class UploadFileServiceImpl implements IUploadFileService {
     public boolean delete(String filename) {
         Path rootPath = getPath(filename);
         File archivo = rootPath.toFile();
-        //Con el siguiente codigo eliminamos la foto del cliente
         if (archivo.exists() && archivo.canRead()){
             if (archivo.delete()){
                 return true;

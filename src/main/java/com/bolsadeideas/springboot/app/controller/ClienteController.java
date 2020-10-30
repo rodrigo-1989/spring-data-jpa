@@ -33,7 +33,6 @@ public class ClienteController {
     @Autowired
     private IUploadFileService uploadFileService;
 
-    //El siguiente metodo es otra manera de subir imagenes al servidor
 
     @GetMapping(value = "/uploads/{filename:.+}")
     public ResponseEntity<Resource>verFoto(@PathVariable String filename){
@@ -61,8 +60,6 @@ public class ClienteController {
         return "ver";
 
     }
-    //La siguiente anotacion es por si tenemos mas de un componente conectado a la BBDD
-    //@Qualifier("clienteDaoJPA")
     @Autowired
     private IClienteService clienteService;
 

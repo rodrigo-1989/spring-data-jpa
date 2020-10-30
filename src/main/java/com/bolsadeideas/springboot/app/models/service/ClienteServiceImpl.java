@@ -14,8 +14,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-//Esta clase junto con su interface se utilizan para no implementar directamente
-//Las clases dao en el Controllador
 @Service
 public class ClienteServiceImpl implements IClienteService {
 

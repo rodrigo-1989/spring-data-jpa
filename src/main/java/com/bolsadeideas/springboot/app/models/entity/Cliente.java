@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-//Esta es nuestra clase entity tambien conocida como POJO
 @Entity
 @Table(name = "clientes")
 public class Cliente  implements Serializable {

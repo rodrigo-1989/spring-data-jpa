@@ -13,8 +13,6 @@ public interface IUploadFileService {
 
     public boolean delete(String filename);
 
-    //Los ultimos dos metodos nos sirven para eliminar todas las imagenes
-    //y recrear el directorio desde 0
 
     public void deleteAll();
 
